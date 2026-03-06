@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // Navbar-ı buradan import edirik
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,10 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Layihə artıq məktəb deyil, onlayn platformadır - Metadata yeniləndi
 export const metadata: Metadata = {
-  title: "Müasir Təhsil Məktəbi | Gələcəyə Addım",
-  description: "Yüksək keyfiyyətli təhsil, peşəkar müəllim heyəti və innovativ tədris proqramı ilə övladınızın gələcəyini bizimlə qurun.",
-  keywords: ["məktəb", "təhsil", "onlayn jurnal", "şagird", "valideyn paneli", "imtahan sistemi"],
+  title: "PLATFORMA 2026 | Onlayn Təhsil və Sınaq Sistemi",
+  description: "İnteraktiv dərslər, onlayn sınaq imtahanları və tədris materialları ilə biliklərinizi artırın. Bilgi sərhəd tanımır.",
+  keywords: ["onlayn təhsil", "sınaq imtahanı", "onlayn sınaq", "təhsil resursları", "şagird paneli", "imtahan sistemi"],
 };
 
 export default function RootLayout({
@@ -27,18 +28,15 @@ export default function RootLayout({
   return (
     <html lang="az" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 transition-colors duration-300`}
       >
-        {/* Navbar bütün səhifələrdə görünəcək */}
+        {/* Navbar burada qalır, lakin daxilindəki məntiqlə ana səhifədə özünü gizlədir */}
         <Navbar />
 
         <div className="relative flex min-h-screen flex-col">
-          {/* Səhifə məzmunu bura gəlir */}
           <main className="flex-grow">
             {children}
           </main>
-
-          {/* İstəsən bura ümumi bir Footer də əlavə edə bilərsən */}
         </div>
       </body>
     </html>

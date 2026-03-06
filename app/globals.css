@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Əsas rəng dəyişənləri */
+  /* Əsas rəng dəyişənləri - Next.js layout-dan gələn dəyişənlərə bağlanır */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
   /* Şriftlər */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Brend rəngləri üçün əlavə (İndigo tonları) */
+  --color-primary: #4f46e5; /* indigo-600 */
+  --color-primary-hover: #4338ca; /* indigo-700 */
 }
 
 :root {
@@ -16,23 +20,44 @@
   --foreground: #09090b; /* Zinc-950 */
 }
 
+/* Qaranlıq rejim - həm sistem ayarına, həm də .dark klasına görə işləsin */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Qaranlıq rejim (Dark Mode) */
     --background: #09090b; /* Zinc-950 */
     --foreground: #fafafa; /* Zinc-50 */
   }
 }
 
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+}
+
 /* Qlobal stillər */
 @layer base {
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: var(--font-sans);
+  * {
+    @apply border-zinc-200 dark:border-zinc-800;
   }
 
-  /* Seçimlər üçün hamar keçid */
-  * {
-    @apply border-zinc-200 dark:border-zinc-800 transition-colors duration-200;
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900 dark:selection:text-indigo-100;
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hamar fokus effektləri */
+  input, button, select, a {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-950;
+  }
+}
+
+/* Çap rejimi üçün xüsusi köməkçi siniflər */
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
   }
 }
