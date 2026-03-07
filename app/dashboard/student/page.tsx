@@ -13,6 +13,7 @@ export default function StudentPage() {
   const exams = [
     // RIYAZIYYAT
     { id: "math-1", subject: "Riyaziyyat", grade: "1", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-2", subject: "Riyaziyyat", grade: "2", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "math-9", subject: "Riyaziyyat", grade: "9", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     
     // FIZIKA

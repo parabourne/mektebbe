@@ -12,6 +12,18 @@
       { "id": 9, "q": "Hansı kiçikdir?", "options": ["10", "12", "8", "15"], "correct": "8" },
       { "id": 10, "q": "1 + 9 neçə edir?", "options": ["10", "11", "9", "8"], "correct": "10" }
     ],
+    "2": [
+      { "id": 1, "q": "25 + 14 cəmi neçə edir?", "options": ["35", "39", "40", "49"], "correct": "39" },
+      { "id": 2, "q": "Hansı ədəd 4 onluq və 3 təklikdən ibarətdir?", "options": ["34", "40", "43", "7"], "correct": "43" },
+      { "id": 3, "q": "50-dən əvvəl gələn tək ədəd hansıdır?", "options": ["48", "49", "51", "52"], "correct": "49" },
+      { "id": 4, "q": "Hər birində 5 konfet olan 3 qutuda cəmi neçə konfet var?", "options": ["8", "10", "15", "20"], "correct": "15" },
+      { "id": 5, "q": "Hansı fiqurun 3 tərəfi və 3 bucağı var?", "options": ["Kvadrat", "Düzbucaqlı", "Üçbucaq", "Dairə"], "correct": "Üçbucaq" },
+      { "id": 6, "q": "82 - 20 fərqi neçəyə bərabərdir?", "options": ["60", "62", "72", "52"], "correct": "62" },
+      { "id": 7, "q": "Azalan 18, çıxılan 9 olarsa, fərqi tapın.", "options": ["7", "8", "9", "10"], "correct": "9" },
+      { "id": 8, "q": "Saatın üzərindəki uzun əqrəb nəyi göstərir?", "options": ["Saatı", "Dəqiqəni", "Saniyəni", "Günü"], "correct": "Dəqiqəni" },
+      { "id": 9, "q": "1 metr neçə santimetrdir?", "options": ["10 sm", "50 sm", "100 sm", "1000 sm"], "correct": "100 sm" },
+      { "id": 10, "q": "2, 4, 6, 8, ... ardıcıllığında növbəti ədəd hansıdır?", "options": ["9", "10", "11", "12"], "correct": "10" }
+    ],
     "9": [
       { "id": 1, "q": "2x + 5 = 15 tənliyində x-i tapın.", "options": ["2", "5", "10", "15"], "correct": "5" },
       { "id": 2, "q": "Kök altında 144-dən nə çıxır?", "options": ["10", "11", "12", "14"], "correct": "12" },
