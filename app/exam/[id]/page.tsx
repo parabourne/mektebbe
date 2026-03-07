@@ -12,8 +12,8 @@ export default function ExamPage() {
     firstName: "", 
     lastName: "", 
     schoolName: "", 
-    grade: "", 
-    subject: "" 
+    grade: "", // URL-dən avtomatik gələcək
+    subject: "" // URL-dən avtomatik gələcək
   });
   
   const [isStarted, setIsStarted] = useState(false);
@@ -22,11 +22,21 @@ export default function ExamPage() {
   const [timeLeft, setTimeLeft] = useState(1500);
   const [currentQuestions, setCurrentQuestions] = useState<any[]>([]);
 
+  // URL-dən həm fənni (id), həm də sinfi (grade) götürürük
   useEffect(() => {
     if (params.id) {
       const subjectFromUrl = decodeURIComponent(params.id as string);
       const formattedSubject = subjectFromUrl.charAt(0).toUpperCase() + subjectFromUrl.slice(1);
-      setStudentInfo(prev => ({ ...prev, subject: formattedSubject }));
+      
+      // URL-dəki ?grade=X hissəsini oxuyuruq
+      const urlParams = new URLSearchParams(window.location.search);
+      const gradeFromUrl = urlParams.get("grade") || "";
+
+      setStudentInfo(prev => ({ 
+        ...prev, 
+        subject: formattedSubject,
+        grade: gradeFromUrl 
+      }));
     }
   }, [params.id]);
 
@@ -37,16 +47,20 @@ export default function ExamPage() {
 
   const handleStart = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!studentInfo.firstName || !studentInfo.lastName || !studentInfo.schoolName || !studentInfo.grade) {
+    // Artıq sinif seçimi inputu yoxdur, yalnız digər xanaları yoxlayırıq
+    if (!studentInfo.firstName || !studentInfo.lastName || !studentInfo.schoolName) {
       alert("Xahiş olunur bütün xanaları doldurun!");
       return;
     }
+
     const subjectData = (questionBank as any)[studentInfo.subject] || {};
     const filteredQuestions = subjectData[studentInfo.grade] || [];
+    
     if (filteredQuestions.length === 0) {
       alert(`${studentInfo.grade}-cu sinif üçün ${studentInfo.subject} sualları hələ əlavə edilməyib!`);
       return;
     }
+    
     setCurrentQuestions(filteredQuestions);
     setIsStarted(true);
   };
@@ -83,24 +97,27 @@ export default function ExamPage() {
     return (
       <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-zinc-950 p-4 font-sans text-black dark:text-white">
         <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-xl dark:bg-zinc-900 border dark:border-zinc-800">
-          <h2 className="text-xl font-black text-blue-600 text-center mb-4 italic uppercase">İmtahana Giriş</h2>
+          <h2 className="text-xl font-black text-blue-600 text-center mb-4 italic uppercase">Sınaq Girişi</h2>
           <form onSubmit={handleStart} className="space-y-3">
             <div className="grid grid-cols-2 gap-2">
               <input type="text" placeholder="Ad" required className="p-3 text-sm rounded-xl border dark:bg-zinc-800 dark:border-zinc-700 outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" onChange={(e) => setStudentInfo({...studentInfo, firstName: e.target.value})} />
               <input type="text" placeholder="Soyad" required className="p-3 text-sm rounded-xl border dark:bg-zinc-800 dark:border-zinc-700 outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" onChange={(e) => setStudentInfo({...studentInfo, lastName: e.target.value})} />
             </div>
             <input type="text" placeholder="Məktəb Adı / №" required className="w-full p-3 text-sm rounded-xl border dark:bg-zinc-800 dark:border-zinc-700 outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" onChange={(e) => setStudentInfo({...studentInfo, schoolName: e.target.value})} />
-            <select className="w-full p-3 text-sm rounded-xl border dark:bg-zinc-800 dark:border-zinc-700 outline-none focus:ring-2 focus:ring-blue-500/20 transition-all" onChange={(e) => setStudentInfo({...studentInfo, grade: e.target.value})} required>
-              <option value="">Sinif Seçin</option>
-              {Array.from({ length: 11 }, (_, i) => i + 1).map((num) => (
-                <option key={num} value={num}>{num}-cu sinif</option>
-              ))}
-            </select>
-            <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 text-center">
-              <span className="text-[10px] font-bold text-blue-600 block uppercase tracking-tighter">İmtahan Fənni</span>
-              <span className="text-xs font-black uppercase italic">{studentInfo.subject}</span>
+            
+            {/* Dinamik olaraq seçilmiş fənn və sinif məlumatı */}
+            <div className="grid grid-cols-2 gap-2">
+                <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 text-center">
+                    <span className="text-[10px] font-bold text-blue-600 block uppercase tracking-tighter">Fənn</span>
+                    <span className="text-xs font-black dark:text-white uppercase italic">{studentInfo.subject}</span>
+                </div>
+                <div className="p-2 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-100 text-center">
+                    <span className="text-[10px] font-bold text-orange-600 block uppercase tracking-tighter">Sinif</span>
+                    <span className="text-xs font-black dark:text-white uppercase italic">{studentInfo.grade}</span>
+                </div>
             </div>
-            <button className="w-full py-3.5 bg-blue-600 text-white rounded-xl font-bold text-xs shadow-lg active:scale-95 transition-all">Sınağı Başlat</button>
+
+            <button className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold text-xs shadow-lg active:scale-95 transition-all">Sınağı Başlat</button>
           </form>
         </div>
       </div>
