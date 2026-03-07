@@ -10,9 +10,53 @@ export default function StudentPage() {
   const categories = ["Hamısı", "Riyaziyyat", "Fizika", "Kimya", "İnformatika"];
 
   const exams = [
-    { id: "math-101", subject: "Riyaziyyat", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-202", subject: "Fizika", questions: 15, time: "25 dəq", status: "Bitib", score: 85, correct: 13, wrong: 2 },
-    { id: "chem-303", subject: "Kimya", questions: 25, time: "40 dəq", status: "Aktiv", difficulty: "Çətin" },
+    // RIYAZIYYAT (10 ədəd)
+    { id: "math-1", subject: "Riyaziyyat", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-2", subject: "Riyaziyyat", questions: 25, time: "45 dəq", status: "Bitib", score: 92, difficulty: "Orta" },
+    { id: "math-3", subject: "Riyaziyyat", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "math-4", subject: "Riyaziyyat", questions: 15, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-5", subject: "Riyaziyyat", questions: 30, time: "60 dəq", status: "Bitib", score: 75, difficulty: "Orta" },
+    { id: "math-6", subject: "Riyaziyyat", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "math-7", subject: "Riyaziyyat", questions: 25, time: "40 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "math-8", subject: "Riyaziyyat", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-9", subject: "Riyaziyyat", questions: 20, time: "35 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "math-10", subject: "Riyaziyyat", questions: 25, time: "45 dəq", status: "Aktiv", difficulty: "Çətin" },
+
+    // FIZIKA (10 ədəd)
+    { id: "phys-1", subject: "Fizika", questions: 15, time: "25 dəq", status: "Bitib", score: 85, difficulty: "Orta" },
+    { id: "phys-2", subject: "Fizika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "phys-3", subject: "Fizika", questions: 15, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "phys-4", subject: "Fizika", questions: 25, time: "40 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "phys-5", subject: "Fizika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "phys-6", subject: "Fizika", questions: 15, time: "25 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "phys-7", subject: "Fizika", questions: 20, time: "35 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "phys-8", subject: "Fizika", questions: 25, time: "45 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "phys-9", subject: "Fizika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "phys-10", subject: "Fizika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+
+    // KIMYA (10 ədəd)
+    { id: "chem-1", subject: "Kimya", questions: 25, time: "40 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "chem-2", subject: "Kimya", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "chem-3", subject: "Kimya", questions: 15, time: "25 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "chem-4", subject: "Kimya", questions: 25, time: "40 dəq", status: "Bitib", score: 60, difficulty: "Çətin" },
+    { id: "chem-5", subject: "Kimya", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "chem-6", subject: "Kimya", questions: 15, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "chem-7", subject: "Kimya", questions: 20, time: "35 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "chem-8", subject: "Kimya", questions: 30, time: "50 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "chem-9", subject: "Kimya", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "chem-10", subject: "Kimya", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+
+    // INFORMATIKA (10 ədəd)
+    { id: "inf-1", subject: "İnformatika", questions: 15, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "inf-2", subject: "İnformatika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "inf-3", subject: "İnformatika", questions: 25, time: "45 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "inf-4", subject: "İnformatika", questions: 15, time: "20 dəq", status: "Bitib", score: 100, difficulty: "Asan" },
+    { id: "inf-5", subject: "İnformatika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "inf-6", subject: "İnformatika", questions: 20, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "inf-7", subject: "İnformatika", questions: 25, time: "40 dəq", status: "Aktiv", difficulty: "Çətin" },
+    { id: "inf-8", subject: "İnformatika", questions: 15, time: "25 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "inf-9", subject: "İnformatika", questions: 20, time: "35 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "inf-10", subject: "İnformatika", questions: 30, time: "50 dəq", status: "Aktiv", difficulty: "Çətin" },
   ];
 
   const resources = [
@@ -36,7 +80,7 @@ export default function StudentPage() {
   return (
     <div className="min-h-screen bg-[#f8f9fa] dark:bg-zinc-950 font-sans pb-20">
       
-      {/* --- NAVİQASİYA (Axtarış ilə) --- */}
+      {/* --- NAVİQASİYA --- */}
       <nav className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-900/80 px-6 py-4">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6">
           <Link href="/" className="text-2xl font-black text-indigo-600 tracking-tighter shrink-0">PLATFORMA</Link>
@@ -101,10 +145,10 @@ export default function StudentPage() {
 
         <div className="grid gap-10 lg:grid-cols-12">
           
-          {/* --- SOL: SINAQLAR (7/12) --- */}
+          {/* --- SOL: SINAQLAR --- */}
           <section className="lg:col-span-8 space-y-6">
             <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-4">
-              <h3 className="text-2xl font-black italic tracking-tight dark:text-white">{activeTab} Sınaqları</h3>
+              <h3 className="text-2xl font-black italic tracking-tight dark:text-white">{activeTab} Sınaqları ({filteredExams.length})</h3>
             </div>
             
             <div className="grid gap-4 sm:grid-cols-2">
@@ -116,7 +160,7 @@ export default function StudentPage() {
                   <div className="mt-2 h-12 w-12 rounded-xl bg-zinc-50 dark:bg-zinc-800 flex items-center justify-center font-black text-indigo-600">
                     {exam.subject[0]}
                   </div>
-                  <h4 className="mt-4 font-bold text-lg dark:text-white leading-tight">{exam.subject} İmtahanı</h4>
+                  <h4 className="mt-4 font-bold text-lg dark:text-white leading-tight">{exam.subject} İmtahanı #{exam.id.split('-')[1]}</h4>
                   <p className="text-xs text-zinc-500 italic mt-1">{exam.questions} Sual • {exam.difficulty}</p>
                   
                   <div className="mt-6 flex items-center justify-between">
@@ -138,10 +182,8 @@ export default function StudentPage() {
             </div>
           </section>
 
-          {/* --- SAĞ: RESURSLAR VƏ REYTİNQ (5/12) --- */}
+          {/* --- SAĞ: ASİDE --- */}
           <aside className="lg:col-span-4 space-y-10">
-            
-            {/* Liderlər Cədvəli */}
             <section className="rounded-3xl bg-zinc-900 p-6 text-white shadow-xl">
               <h3 className="text-lg font-black italic mb-6">Həftəlik Liderlər</h3>
               <div className="space-y-4">
@@ -157,7 +199,6 @@ export default function StudentPage() {
               </div>
             </section>
 
-            {/* Son Materiallar */}
             <section className="space-y-6">
               <h3 className="text-2xl font-black italic tracking-tight dark:text-white">Dərs Resursları</h3>
               <div className="grid gap-3">
@@ -176,14 +217,10 @@ export default function StudentPage() {
                         <p className="text-[10px] text-zinc-400 italic">{res.subject}</p>
                       </div>
                     </div>
-                    <button className="text-zinc-300 group-hover:text-indigo-600">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5h5M5 8h2m6 9l2 2 5-5" /></svg>
-                    </button>
                   </div>
                 ))}
               </div>
             </section>
-
           </aside>
         </div>
       </main>

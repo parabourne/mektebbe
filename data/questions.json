@@ -1,0 +1,70 @@
+{
+  "Riyaziyyat": {
+    "1": [
+      { "id": 1, "q": "5 + 3 neçə edir?", "options": ["7", "8", "9", "10"], "correct": "8" },
+      { "id": 2, "q": "10 - 4 neçə edir?", "options": ["4", "5", "6", "7"], "correct": "6" },
+      { "id": 3, "q": "Hansı ədəd 5-dən böyükdür?", "options": ["2", "4", "6", "3"], "correct": "6" },
+      { "id": 4, "q": "2 + 2 + 2 neçə edir?", "options": ["4", "6", "8", "10"], "correct": "6" },
+      { "id": 5, "q": "7-dən əvvəl gələn ədəd hansıdır?", "options": ["5", "6", "8", "9"], "correct": "6" },
+      { "id": 6, "q": "3 alma + 2 alma neçə alma edir?", "options": ["4", "5", "6", "7"], "correct": "5" },
+      { "id": 7, "q": "Sıfır rəqəmi hansıdır?", "options": ["0", "1", "2", "3"], "correct": "0" },
+      { "id": 8, "q": "4-ün üzərinə neçə gəlsək 10 edər?", "options": ["4", "5", "6", "7"], "correct": "6" },
+      { "id": 9, "q": "Hansı kiçikdir?", "options": ["10", "12", "8", "15"], "correct": "8" },
+      { "id": 10, "q": "1 + 9 neçə edir?", "options": ["10", "11", "9", "8"], "correct": "10" }
+    ],
+    "9": [
+      { "id": 1, "q": "2x + 5 = 15 tənliyində x-i tapın.", "options": ["2", "5", "10", "15"], "correct": "5" },
+      { "id": 2, "q": "Kök altında 144-dən nə çıxır?", "options": ["10", "11", "12", "14"], "correct": "12" },
+      { "id": 3, "q": "Pifaqor teoremi: a² + b² = ?", "options": ["c", "c²", "2c", "ab"], "correct": "c²" },
+      { "id": 4, "q": "Sinus 90 dərəcədə neçədir?", "options": ["0", "1", "0.5", "-1"], "correct": "1" },
+      { "id": 5, "q": "Düzbucaqlının sahəsi: S = ?", "options": ["a+b", "a*b", "2(a+b)", "a²"], "correct": "a*b" },
+      { "id": 6, "q": "Hansı irrasional ədəddir?", "options": ["5", "2/3", "√2", "0.5"], "correct": "√2" },
+      { "id": 7, "q": "Diskriminant düsturu: D = ?", "options": ["b²-4ac", "b-4ac", "b²+4ac", "4ac-b²"], "correct": "b²-4ac" },
+      { "id": 8, "q": "Xətti funksiya hansıdır?", "options": ["y=kx+b", "y=ax²", "y=k/x", "y=sin x"], "correct": "y=kx+b" },
+      { "id": 9, "q": "Üçbucağın daxili bucaqlarının cəmi:", "options": ["90", "180", "270", "360"], "correct": "180" },
+      { "id": 10, "q": "Logaritma log₂8 neçədir?", "options": ["2", "3", "4", "8"], "correct": "3" }
+    ]
+  },
+  "Azərbaycan dili": {
+    "1": [
+      { "id": 1, "q": "Hansı söz böyük hərflə yazılmalıdır?", "options": ["alma", "bakı", "kitab", "uşaq"], "correct": "bakı" },
+      { "id": 2, "q": "Saitləri seçin.", "options": ["b, c, d", "a, e, i", "k, l, m", "p, r, s"], "correct": "a, e, i" },
+      { "id": 3, "q": "Hansı samitdir?", "options": ["a", "u", "b", "e"], "correct": "b" },
+      { "id": 4, "q": "Əlifbamızda neçə hərf var?", "options": ["28", "30", "32", "34"], "correct": "32" },
+      { "id": 5, "q": "Cümlənin sonunda nə qoyulur?", "options": [",", "!", ".", "?"], "correct": "." },
+      { "id": 6, "q": "Hansı söz 'nə?' sualına cavab verir?", "options": ["uşaq", "kitab", "ana", "ata"], "correct": "kitab" },
+      { "id": 7, "q": "Günün salamı hansıdır?", "options": ["Sağ ol", "Salam", "Gecən xeyrə", "Görüşənədək"], "correct": "Salam" },
+      { "id": 8, "q": "Hansı söz hecalara düzgün bölünüb?", "options": ["mək-təb", "mə-ktəb", "məkt-əb", "m-əktəb"], "correct": "mək-təb" },
+      { "id": 9, "q": "Nöqtələrin yerinə nə yazılmalıdır: ... alma yedim.", "options": ["Mən", "Sən", "O", "Biz"], "correct": "Mən" },
+      { "id": 10, "q": "Kitab sözü neçə hərfdir?", "options": ["4", "5", "6", "3"], "correct": "5" }
+    ]
+  },
+  "Fizika": {
+    "7": [
+      { "id": 1, "q": "Sürətin vahidi hansıdır?", "options": ["m", "s", "m/s", "kq"], "correct": "m/s" },
+      { "id": 2, "q": "Sıxlığın düsturu hansıdır?", "options": ["m*v", "m/V", "F/a", "P*t"], "correct": "m/V" },
+      { "id": 3, "q": "Qüvvənin vahidi nədir?", "options": ["Coul", "Vatt", "Nyuton", "Paskal"], "correct": "Nyuton" },
+      { "id": 4, "q": "Diffuziya nədir?", "options": ["Donma", "Molekulların qarışması", "Qızma", "Buxarlanma"], "correct": "Molekulların qarışması" },
+      { "id": 5, "q": "Təzyiqin vahidi nədir?", "options": ["Nyuton", "Vatt", "Paskal", "Amper"], "correct": "Paskal" },
+      { "id": 6, "q": "Həcm hansı hərflə işarə olunur?", "options": ["m", "V", "P", "F"], "correct": "V" },
+      { "id": 7, "q": "Barometr nəyi ölçür?", "options": ["Sürəti", "Təzyiqi", "İstiliyi", "Kütləni"], "correct": "Təzyiqi" },
+      { "id": 8, "q": "Kütlənin vahidi?", "options": ["Metr", "Saniyə", "Kiloqram", "Litr"], "correct": "Kiloqram" },
+      { "id": 9, "q": "İstiliyin keçməsi neçə yolla olur?", "options": ["1", "2", "3", "4"], "correct": "3" },
+      { "id": 10, "q": "Vakuumda səs yayılırmı?", "options": ["Bəli", "Xeyr", "Bəzən", "Yalnız kosmosda"], "correct": "Xeyr" }
+    ]
+  },
+  "Kimya": {
+    "8": [
+      { "id": 1, "q": "Suyun kimyəvi formulu:", "options": ["CO2", "H2O", "O2", "NaCl"], "correct": "H2O" },
+      { "id": 2, "q": "Oksigenin valentliyi neçədir?", "options": ["I", "II", "III", "IV"], "correct": "II" },
+      { "id": 3, "q": "Dövri cədvəli kim yaradıb?", "options": ["Nobel", "Mendeleyev", "Küri", "Lomonosov"], "correct": "Mendeleyev" },
+      { "id": 4, "q": "Hidrogenin simvolu nədir?", "options": ["He", "H", "Hg", "Li"], "correct": "H" },
+      { "id": 5, "q": "Xörək duzunun formulu:", "options": ["NaOH", "HCl", "NaCl", "KOH"], "correct": "NaCl" },
+      { "id": 6, "q": "Atomun mərkəzində nə yerləşir?", "options": ["Elektron", "Nüvə", "Molekul", "Heç biri"], "correct": "Nüvə" },
+      { "id": 7, "q": "Dəmirin simvolu:", "options": ["De", "Dm", "Fe", "Ir"], "correct": "Fe" },
+      { "id": 8, "q": "Havada ən çox hansı qaz var?", "options": ["Oksigen", "Azot", "Karbon", "Hidrogen"], "correct": "Azot" },
+      { "id": 9, "q": "Saf maddəni seçin.", "options": ["Hava", "Dəniz suyu", "Distillə edilmiş su", "Süd"], "correct": "Distillə edilmiş su" },
+      { "id": 10, "q": "Turşunun simvolu adətən hansı hərfə başlayır?", "options": ["O", "H", "C", "N"], "correct": "H" }
+    ]
+  }
+}
