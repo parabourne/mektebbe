@@ -14,6 +14,12 @@ export default function StudentPage() {
     // RIYAZIYYAT
     { id: "math-1", subject: "Riyaziyyat", grade: "1", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "math-2", subject: "Riyaziyyat", grade: "2", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-3", subject: "Riyaziyyat", grade: "3", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-4", subject: "Riyaziyyat", grade: "4", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-5", subject: "Riyaziyyat", grade: "5", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-6", subject: "Riyaziyyat", grade: "6", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-7", subject: "Riyaziyyat", grade: "7", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "math-8", subject: "Riyaziyyat", grade: "8", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "math-9", subject: "Riyaziyyat", grade: "9", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     
     // FIZIKA
