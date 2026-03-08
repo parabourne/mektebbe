@@ -10,7 +10,7 @@ const PDF_DATA = [
     ad: "IX Sinif Buraxılış İmtahanı + Cavablar", 
     fayl: "27aprel2025-IX-sinif-buraxılıs-cavablar.pdf", 
     tip: "pdf", 
-    kateqoriya: "Azərbaycan Dili", 
+    kateqoriya: "Riyaziyyat", 
     olcu: "2.1 MB",
     tarix: "2025-04-27"
   }
