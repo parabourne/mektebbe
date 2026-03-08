@@ -21,6 +21,8 @@ export default function StudentPage() {
     { id: "math-7", subject: "Riyaziyyat", grade: "7", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "math-8", subject: "Riyaziyyat", grade: "8", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "math-9", subject: "Riyaziyyat", grade: "9", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "math-10", subject: "Riyaziyyat", grade: "10", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "math-11", subject: "Riyaziyyat", grade: "11", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     
     // FIZIKA
     { id: "phys-7", subject: "Fizika", grade: "7", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
@@ -45,6 +47,8 @@ export default function StudentPage() {
     { id: "aze-7", subject: "Azərbaycan dili", grade: "7", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "aze-8", subject: "Azərbaycan dili", grade: "8", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "aze-9", subject: "Azərbaycan dili", grade: "9", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "aze-10", subject: "Azərbaycan dili", grade: "10", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
+    { id: "aze-11", subject: "Azərbaycan dili", grade: "11", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
 
     // ... Digər sınaqlar (id-ləri subject kimi də istifadə edə bilərik)
   ];
