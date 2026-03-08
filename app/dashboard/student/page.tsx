@@ -23,27 +23,18 @@ export default function StudentPage() {
     { id: "math-9", subject: "Riyaziyyat", grade: "9", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     
     // FIZIKA
-    { id: "phys-1", subject: "Fizika", grade: "1", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-2", subject: "Fizika", grade: "2", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-3", subject: "Fizika", grade: "3", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-4", subject: "Fizika", grade: "4", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-5", subject: "Fizika", grade: "5", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "phys-6", subject: "Fizika", grade: "6", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "phys-7", subject: "Fizika", grade: "7", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "phys-8", subject: "Fizika", grade: "8", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "phys-9", subject: "Fizika", grade: "9", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
-    
+    { id: "phys-10", subject: "Fizika", grade: "10", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "phys-11", subject: "Fizika", grade: "11", questions: 10, time: "25 dəq", status: "Aktiv", difficulty: "Orta" },
     // KIMYA
-    { id: "chem-1", subject: "Kimya", grade: "1", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "chem-2", subject: "Kimya", grade: "2", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "chem-3", subject: "Kimya", grade: "3", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "chem-4", subject: "Kimya", grade: "4", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "chem-5", subject: "Kimya", grade: "5", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-    { id: "chem-6", subject: "Kimya", grade: "6", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "chem-7", subject: "Kimya", grade: "7", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "chem-8", subject: "Kimya", grade: "8", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
     { id: "chem-9", subject: "Kimya", grade: "9", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
-
+    { id: "chem-10", subject: "Kimya", grade: "10", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    { id: "chem-11", subject: "Kimya", grade: "11", questions: 10, time: "30 dəq", status: "Aktiv", difficulty: "Orta" },
+    
     // AZƏRBAYCAN DİLİ
     { id: "aze-1", subject: "Azərbaycan dili", grade: "1", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
     { id: "aze-2", subject: "Azərbaycan dili", grade: "2", questions: 10, time: "20 dəq", status: "Aktiv", difficulty: "Asan" },
