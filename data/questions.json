@@ -145,10 +145,10 @@
       { "id": 4, "q": "Reaksiyanın orta sürəti necə hesablanır?", "options": ["Həcm/zaman", "Kütlə/zaman", "Temperatur/zaman", "Qatılq/zaman"], "correct": "Həcm/zaman" },
       { "id": 5, "q": "Biri atom kristal qəfəs tipinə aiddir? ", "options": ["H2O", "CaCo3", "SiC", "P4"], "correct": "SiC" },
       { "id": 6, "q": "Hansı birləşmə qeyri-polyar kovalent rabitəyə aiddir??", "options": ["NaCl", "HNO3", "Al(HO3)", "F2"], "correct": "F2" },
-      { "id": 7, "q": "Dəmirin simvolu:", "options": ["De", "Dm", "Fe", "Ir"], "correct": "Fe" },
-      { "id": 8, "q": "Havada ən çox hansı qaz var?", "options": ["Oksigen", "Azot", "Karbon", "Hidrogen"], "correct": "Azot" },
-      { "id": 9, "q": "Saf maddəni seçin.", "options": ["Hava", "Dəniz suyu", "Distillə edilmiş su", "Süd"], "correct": "Distillə edilmiş su" },
-      { "id": 10, "q": "Turşunun simvolu adətən hansı hərfə başlayır?", "options": ["O", "H", "C", "N"], "correct": "H" }
+      { "id": 7, "q": "Aşağıdakılardan biri çox ləng gedən reaksiyadır?", "options": ["Kağın yanması", "Mərminin partlaması", "Yumurtanın qaynaması", "Fosillərin əmələ gəlməsi"], "correct": "Fosillərin əmələ gəlməsi"},
+      { "id": 8, "q": "İxtiyari reaksiyada dəmirin sərfolunma sürətini hansı vahidlə ifadə etmək olar?", "options": ["Km/saat", "m/san", "Qram/dəq", "Litr/dəq"], "correct": "Qram/dəq" },
+      { "id": 9, "q": "A qabındakı hidrogenin qatılığı B qabındakı hidrogenin qatılığından çoxdur. Hansı qabda reaksiya daha sürətlidir?", "options": ["A qabında", "B qabında", "Hər ikisində", "Heç birində"], "correct": "A qabında" },
+      { "id": 10, "q": "Atomun 3-cü energetik səviyyəsində maksimum neçə elektron ola bilər?", "options": ["2", "18", "8", "24"], "correct": "18" }
     ]
   }
 }
