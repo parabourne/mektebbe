@@ -88,12 +88,12 @@
       { "id": 1, "q": "Trapesiyanın sahəsi 72, hündürlüyü 6 olarsa, oturacaqlarının cəmini tapın ?", "options": ["20", "24", "12", "35"], "correct": "24" },
       { "id": 2, "q": "Katetləri 5 və 12 olan üçbucağın hipotenuzu tapın ?", "options": ["16", "13", "17", "20"], "correct": "13" },
       { "id": 3, "q": "Kvadrat tənliyin diskriminantı mənfi olarsa, neçə kökü var?", "options": ["2", "1", "Həqiqi kökü yoxdur", "Sonsuz"], "correct": "Həqiqi kökü yoxdur" },
-      { "id": 4, "q": "Trapeziyanın sahəsi düsturu hansıdır?", "options": ["ah", "bh", "((a+b)/2)*h", "ab"], "correct": "((a+b)/2)*h" },
+      { "id": 4, "q": "(x-7)(x+3) tənliyin kökləri hansıdır?", "options": ["10 və 4", "20 və 3", "7 və -3", "-7 və 3"], "correct": "7 və -3" },
       { "id": 5, "q": "Hansı irrasional ədəddir?", "options": ["2", "0.5", "√3", "4/5"], "correct": "√3" },
-      { "id": 6, "q": "Kvadratın sahəsi 64 sm²-dirsə, tərəfi neçədir?", "options": ["4", "8", "16", "32"], "correct": "8" },
+      { "id": 6, "q": "Kvadratın diaqonalı √18 dirsə, tərəfi neçədir?", "options": ["4", "8", "7", "3"], "correct": "3" },
       { "id": 7, "q": "x² = 25 tənliyinin kökləri hansıdır?", "options": ["5", "-5", "5 və -5", "0"], "correct": "5 və -5" },
       { "id": 8, "q": "Rombun neçə simmetriya oxu var?", "options": ["1", "2", "3", "4"], "correct": "2" },
-      { "id": 9, "q": "Hansı dördbucaqlının bütün tərəfləri bərabərdir?", "options": ["Düzbucaqlı", "Romb", "Trapeziya", "Paraleloqram"], "correct": "Romb" },
+      { "id": 9, "q": "Düzbucaqlının diaqonalları ilə tərəfləri arasındakı əlaqə düsturu hansıdır?", "options": ["a²+b²=d²", "d²=a²+a²", "d=a√2", "d=2a"], "correct": "a²+b²=d²" },
       { "id": 10, "q": "√20 hansı iki tam ədəd arasındadır?", "options": ["3 və 4", "4 və 5", "5 və 6", "2 və 3"], "correct": "4 və 5" }
     ],
     "9": [
