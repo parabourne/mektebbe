@@ -139,12 +139,12 @@
   },
   "Kimya": {
     "8": [
-      { "id": 1, "q": "Suyun kimyəvi formulu:", "options": ["CO2", "H2O", "O2", "NaCl"], "correct": "H2O" },
-      { "id": 2, "q": "Oksigenin valentliyi neçədir?", "options": ["I", "II", "III", "IV"], "correct": "II" },
-      { "id": 3, "q": "Dövri cədvəli kim yaradıb?", "options": ["Nobel", "Mendeleyev", "Küri", "Lomonosov"], "correct": "Mendeleyev" },
-      { "id": 4, "q": "Hidrogenin simvolu nədir?", "options": ["He", "H", "Hg", "Li"], "correct": "H" },
-      { "id": 5, "q": "Xörək duzunun formulu:", "options": ["NaOH", "HCl", "NaCl", "KOH"], "correct": "NaCl" },
-      { "id": 6, "q": "Atomun mərkəzində nə yerləşir?", "options": ["Elektron", "Nüvə", "Molekul", "Heç biri"], "correct": "Nüvə" },
+      { "id": 1, "q": "Kimyəvi reaksiyalarda katalizatorun rolu nədir?", "options": ["Reaksiyanın məhsullarını dəyişdirir", "Reaksiyanın sürətini artırır və özü sərf olunmur", "Maddələrin kütləsini artırır", "Reaksiyanı tam dayandırır"], "correct": "Reaksiyanın sürətini artırır və özü sərf olunmur" },
+      { "id": 2, "q": "Reaksiyanın sürətini hansı üsulla artıra bilmərik?", "options": ["Qatılığı artırmaqla", "Temperaturu artırmaqla", "Temperaturu azaltmaqla", "Katalizator əlavə etməklə"], "correct": "Temperaturu azaltmaqla" },
+      { "id": 3, "q": "Reaksiyanın sürətini azaldan katalizatorlara nə deyilir?", "options": ["Aktivatorlar", "Fermentlər", "İnhibitorlar", "Adsorbentlər"], "correct": "İnhibitorlar" },
+      { "id": 4, "q": "Reaksiyanın orta sürəti necə hesablanır?", "options": ["Həcm/zaman", "Kütlə/zaman", "Temperatur/zaman", "Qatılq/zaman"], "correct": "Həcm/zaman" },
+      { "id": 5, "q": "Biri atom kristal qəfəs tipinə aiddir? ", "options": ["H2O", "CaCo3", "SiC", "P4"], "correct": "SiC" },
+      { "id": 6, "q": "Hansı birləşmə qeyri-polyar kovalent rabitəyə aiddir??", "options": ["NaCl", "HNO3", "Al(HO3)", "F2"], "correct": "F2" },
       { "id": 7, "q": "Dəmirin simvolu:", "options": ["De", "Dm", "Fe", "Ir"], "correct": "Fe" },
       { "id": 8, "q": "Havada ən çox hansı qaz var?", "options": ["Oksigen", "Azot", "Karbon", "Hidrogen"], "correct": "Azot" },
       { "id": 9, "q": "Saf maddəni seçin.", "options": ["Hava", "Dəniz suyu", "Distillə edilmiş su", "Süd"], "correct": "Distillə edilmiş su" },
