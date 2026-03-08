@@ -2,35 +2,17 @@
 
 import { useState } from "react";
 
-const CATEGORIES = ["Hamısı", "Riyaziyyat", "Fizika", "Azərbaycan Dili", "Kimya"];
+const CATEGORIES = ["Hamısı", "Azərbaycan Dili", "Riyaziyyat", "Fizika", "Kimya"];
 
 const PDF_DATA = [
   { 
     id: 1, 
-    ad: "Funksiyalar və Qrafiklər", 
-    fayl: "riyaziyyat-1.pdf", 
+    ad: "IX Sinif Buraxılış İmtahanı + Cavablar", 
+    fayl: "27aprel2025-IX-sinif-buraxılıs-cavablar.pdf", 
     tip: "pdf", 
-    kateqoriya: "Riyaziyyat", 
-    olcu: "1.2 MB",
-    tarix: "2024-05-20"
-  },
-  { 
-    id: 2, 
-    ad: "Mexanika: İş vərəqi", 
-    fayl: "fizika-tapshiriq.docx", 
-    tip: "word", 
-    kateqoriya: "Fizika", 
-    olcu: "45 KB",
-    tarix: "2024-05-18"
-  },
-  { 
-    id: 3, 
-    ad: "Sifət və İsim Testləri", 
-    fayl: "aze-dili-1.pdf", 
-    tip: "pdf",
     kateqoriya: "Azərbaycan Dili", 
-    olcu: "0.8 MB",
-    tarix: "2024-05-15"
+    olcu: "2.1 MB",
+    tarix: "2025-04-27"
   }
 ];
 
@@ -97,41 +79,29 @@ export default function ResurslarPage() {
                 </h3>
                 
                 <p className="mt-4 flex items-center gap-2 text-sm text-zinc-500">
-                  {doc.tip === "pdf" ? (
-                    <svg className="h-5 w-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
-                  ) : (
-                    <svg className="h-5 w-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  )}
+                  <svg className="h-5 w-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
                   {doc.olcu}
                 </p>
               </div>
 
               <div className="mt-8 flex flex-col gap-3">
-                {/* PDF üçün Önizləmə Düyməsi */}
-                {doc.tip === "pdf" && (
-                  <button
-                    onClick={() => setSelectedPdf(`/pdfs/${doc.fayl}`)}
-                    className="flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 py-3 text-sm font-bold text-zinc-900 transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800"
-                  >
-                    <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                    Önizləmə
-                  </button>
-                )}
+                <button
+                  onClick={() => setSelectedPdf(`/pdfs/${doc.fayl}`)}
+                  className="flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 py-3 text-sm font-bold text-zinc-900 transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800"
+                >
+                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  Önizləmə
+                </button>
 
-                {/* Yükləmə Düyməsi */}
                 <a
                   href={`/pdfs/${doc.fayl}`}
                   download
-                  className={`flex items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold text-white transition-all active:scale-95 ${
-                    doc.tip === "pdf" ? "bg-zinc-900 hover:bg-red-600" : "bg-zinc-900 hover:bg-blue-600"
-                  } dark:bg-white dark:text-zinc-900 dark:hover:bg-indigo-500 dark:hover:text-white`}
+                  className="flex items-center justify-center gap-2 rounded-2xl bg-zinc-900 py-4 text-sm font-bold text-white transition-all hover:bg-red-600 active:scale-95 dark:bg-white dark:text-zinc-900 dark:hover:bg-red-500 dark:hover:text-white"
                 >
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -144,12 +114,10 @@ export default function ResurslarPage() {
         </div>
       </div>
 
-      {/* --- MODAL (ÖNİZLƏMƏ PƏNCƏRƏSİ) --- */}
+      {/* --- MODAL --- */}
       {selectedPdf && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-8">
           <div className="relative flex h-full w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl dark:bg-zinc-900">
-            
-            {/* Modal Header */}
             <div className="flex items-center justify-between border-b border-zinc-100 p-4 dark:border-zinc-800">
               <h3 className="font-bold text-zinc-900 dark:text-white">Sənəd Önizləməsi</h3>
               <button 
@@ -159,8 +127,6 @@ export default function ResurslarPage() {
                 ✕
               </button>
             </div>
-
-            {/* Iframe Content */}
             <div className="flex-1 bg-zinc-100 dark:bg-zinc-800">
               <iframe 
                 src={`${selectedPdf}#toolbar=0`} 
