@@ -85,8 +85,8 @@
       { "id": 10, "q": "Xarici bucaq nəyə bərabərdir?", "options": ["Qonşu olmayan iki daxili bucağın cəminə", "Daxili bucağa", "90 dərəcəyə", "180 dərəcəyə"], "correct": "Qonşu olmayan iki daxili bucağın cəminə" }
     ],
     "8": [
-      { "id": 1, "q": "Kök altında 81 (√81) neçədir?", "options": ["7", "8", "9", "10"], "correct": "9" },
-      { "id": 2, "q": "Pifaqor teoremi hansı üçbucağa aiddir?", "options": ["Bərabərtərəfli", "İtibucaqlı", "Düzbucaqlı", "Korbucaqlı"], "correct": "Düzbucaqlı" },
+      { "id": 1, "q": "Trapesiyanın sahəsi 72, hündürlüyü 6 olarsa, oturacaqlarının cəmini tapın ?", "options": ["20", "24", "12", "35"], "correct": "24" },
+      { "id": 2, "q": "Katetləri 5 və 12 olan üçbucağın hipotenuzu tapın ?", "options": ["16", "13", "17", "20"], "correct": "13" },
       { "id": 3, "q": "Kvadrat tənliyin diskriminantı mənfi olarsa, neçə kökü var?", "options": ["2", "1", "Həqiqi kökü yoxdur", "Sonsuz"], "correct": "Həqiqi kökü yoxdur" },
       { "id": 4, "q": "Trapeziyanın sahəsi düsturu hansıdır?", "options": ["ah", "bh", "((a+b)/2)*h", "ab"], "correct": "((a+b)/2)*h" },
       { "id": 5, "q": "Hansı irrasional ədəddir?", "options": ["2", "0.5", "√3", "4/5"], "correct": "√3" },
