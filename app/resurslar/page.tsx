@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 
-const CATEGORIES = ["Hamısı", "Azərbaycan Dili", "Riyaziyyat", "Fizika", "Kimya"];
+// Kateqoriyalara "İngilis Dili" əlavə edildi
+const CATEGORIES = ["Hamısı", "Azərbaycan Dili", "Riyaziyyat", "Fizika", "Kimya", "İngilis Dili"];
 
 const PDF_DATA = [
   { 
@@ -13,6 +14,15 @@ const PDF_DATA = [
     kateqoriya: "Riyaziyyat", 
     olcu: "2.1 MB",
     tarix: "2025-04-27"
+  },
+  { 
+    id: 2, 
+    ad: "IX Sinif DİM Toplu Reading Sözləri (Gülçin Aliyeva)", 
+    fayl: "IXsinifDİMtopluReadingsözləri(Gülçin Aliyeva).pdf", 
+    tip: "pdf", 
+    kateqoriya: "İngilis Dili", 
+    olcu: "1.4 MB", // Təxmini ölçü
+    tarix: "2026-03-11"
   }
 ];
 
@@ -88,7 +98,7 @@ export default function ResurslarPage() {
 
               <div className="mt-8 flex flex-col gap-3">
                 <button
-                  onClick={() => setSelectedPdf(`/pdfs/${doc.fayl}`)}
+                  onClick={() => setSelectedPdf(`/${doc.fayl}`)} // "pdfs" qovluğu yoxdursa birbaşa kökə yönəldildi
                   className="flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 py-3 text-sm font-bold text-zinc-900 transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800"
                 >
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +109,7 @@ export default function ResurslarPage() {
                 </button>
 
                 <a
-                  href={`/pdfs/${doc.fayl}`}
+                  href={`/${doc.fayl}`}
                   download
                   className="flex items-center justify-center gap-2 rounded-2xl bg-zinc-900 py-4 text-sm font-bold text-white transition-all hover:bg-red-600 active:scale-95 dark:bg-white dark:text-zinc-900 dark:hover:bg-red-500 dark:hover:text-white"
                 >
