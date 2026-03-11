@@ -21,7 +21,7 @@ const PDF_DATA = [
     fayl: "IXsinifDİMtopluReadingsözləri(Gülçin Aliyeva).pdf", 
     tip: "pdf", 
     kateqoriya: "İngilis Dili", 
-    olcu: "1.4 MB", // Təxmini ölçü
+    olcu: "1.4 MB",
     tarix: "2026-03-11"
   }
 ];
@@ -98,7 +98,7 @@ export default function ResurslarPage() {
 
               <div className="mt-8 flex flex-col gap-3">
                 <button
-                  onClick={() => setSelectedPdf(`/${doc.fayl}`)} // "pdfs" qovluğu yoxdursa birbaşa kökə yönəldildi
+                  onClick={() => setSelectedPdf(`/pdfs/${doc.fayl}`)}
                   className="flex items-center justify-center gap-2 rounded-2xl border border-zinc-200 py-3 text-sm font-bold text-zinc-900 transition-all hover:bg-zinc-100 dark:border-zinc-700 dark:text-white dark:hover:bg-zinc-800"
                 >
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function ResurslarPage() {
                 </button>
 
                 <a
-                  href={`/${doc.fayl}`}
+                  href={`/pdfs/${doc.fayl}`}
                   download
                   className="flex items-center justify-center gap-2 rounded-2xl bg-zinc-900 py-4 text-sm font-bold text-white transition-all hover:bg-red-600 active:scale-95 dark:bg-white dark:text-zinc-900 dark:hover:bg-red-500 dark:hover:text-white"
                 >
